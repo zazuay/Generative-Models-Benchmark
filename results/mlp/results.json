@@ -1,0 +1,68 @@
+{
+  "tahap1": {
+    "val_acc": 0.8951428571428571,
+    "test_acc": 0.8875714285714286
+  },
+  "orthogonality": {
+    "W1": {
+      "shape": [
+        256,
+        784
+      ],
+      "fro_WtW_minus_I": 396.93951416015625,
+      "fro_WWt_minus_I": 396.2778625488281,
+      "fro_WWt_minus_I_normalized": 24.767366409301758,
+      "sv_max": 12.87828254699707,
+      "sv_min": 0.3679221272468567,
+      "cond_number": 35.00273895263672
+    },
+    "W2": {
+      "shape": [
+        64,
+        256
+      ],
+      "fro_WtW_minus_I": 59.01606369018555,
+      "fro_WWt_minus_I": 57.36636734008789,
+      "fro_WWt_minus_I_normalized": 7.170795917510986,
+      "sv_max": 6.567745208740234,
+      "sv_min": 0.3944069445133209,
+      "cond_number": 16.652204513549805
+    },
+    "W3": {
+      "shape": [
+        10,
+        64
+      ],
+      "fro_WtW_minus_I": 10.692743301391602,
+      "fro_WWt_minus_I": 7.767543315887451,
+      "fro_WWt_minus_I_normalized": 2.456312894821167,
+      "sv_max": 2.4407124519348145,
+      "sv_min": 0.9728719592094421,
+      "cond_number": 2.50877046585083
+    }
+  },
+  "tahap3_transpose_projection": {
+    "mse": 0.2839712655203683,
+    "psnr": 5.52065185546875,
+    "ssim": 0.06528926195417131
+  },
+  "latent_stats": {
+    "z_zero_fraction": 0.521837055683136,
+    "h1_zero_fraction": 0.7219140529632568,
+    "z_dead_dims": 10
+  },
+  "tahap4_frozen_decoder": {
+    "mse": 0.017598187582833425,
+    "psnr": 18.320662109375,
+    "ssim": 0.5971188354492187
+  },
+  "tahap4_vanilla_ae_z64": {
+    "mse": 0.0065110626220703125,
+    "psnr": 22.989178013392856,
+    "ssim": 0.7889415631975446
+  },
+  "tahap5_sampling": {
+    "frac_sampled_z_with_negative": 1.0,
+    "note": "z_MLP selalu >=0 (ReLU), sampel Gaussian bisa negatif -> di luar support data"
+  }
+}

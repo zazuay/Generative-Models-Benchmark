@@ -218,3 +218,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Checkpoint model (besar, jangan di-commit)
+*.pt
+*.pth
+*.ckpt
+
+# Dataset yang diunduh torchvision (otomatis diunduh ulang)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter dan editor
+.ipynb_checkpoints/
+.vscode/
+
+# File sistem
+.DS_Store
+Thumbs.db*.pt

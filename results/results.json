@@ -1,0 +1,58 @@
+{
+  "ae": {
+    "params": 435536,
+    "epochs": 30,
+    "train_time_per_epoch_s": 7.155810825200024,
+    "mse": 0.0065110626220703125,
+    "psnr": 22.989178013392856,
+    "ssim": 0.7889415631975446,
+    "latency_ms_batch64": 0.16807444999358268
+  },
+  "sparse": {
+    "params": 1067024,
+    "epochs": 30,
+    "train_time_per_epoch_s": 7.863510785600018,
+    "frac_zero_latent": 0.3770692050457001,
+    "mean_abs_z": 0.32934999465942383,
+    "dead_units": 66,
+    "mse": 0.004444863455636161,
+    "psnr": 24.682524274553572,
+    "ssim": 0.8449471435546875,
+    "latency_ms_batch64": 0.254012799996417
+  },
+  "vae": {
+    "params": 451984,
+    "epochs": 30,
+    "train_time_per_epoch_s": 7.185280043700095,
+    "mse": 0.013216259956359864,
+    "psnr": 19.63937890625,
+    "ssim": 0.6479403163364955,
+    "latency_ms_batch64": 0.11704665000706882,
+    "fid": 85.8439712524414,
+    "fid_n": 5000
+  },
+  "gan": {
+    "params": 1477136,
+    "epochs": 50,
+    "train_time_per_epoch_s": 9.099473168099903,
+    "latency_ms_batch64": 0.29605255001570185,
+    "fid": 103.0120620727539,
+    "fid_n": 5000
+  },
+  "dcgan": {
+    "params": 759681,
+    "epochs": 30,
+    "train_time_per_epoch_s": 8.99098841949999,
+    "latency_ms_batch64": 0.9537791500179083,
+    "fid": 22.48419761657715,
+    "fid_n": 5000
+  },
+  "ddpm": {
+    "params": 2326529,
+    "epochs": 29,
+    "train_time_per_epoch_s": 41.81197931293102,
+    "latency_ms_batch64": 16047.416719000012,
+    "fid": 42.3028450012207,
+    "fid_n": 5000
+  }
+}
